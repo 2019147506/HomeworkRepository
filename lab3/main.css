@@ -1,0 +1,419 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 24px;
+  color: #222;
+  background-color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page-wrap {
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+.site-header {
+  width: 100%;
+  border-bottom: 1px solid #222;
+  padding-bottom: 12px;
+  margin-bottom: 28px;
+}
+
+.header-animation-box {
+  width: 100%;
+  overflow: hidden;
+}
+
+.sliding-title {
+  width: max-content;
+  margin: 0 0 12px 0;
+  font-size: 30px;
+  font-weight: 700;
+  animation-name: slideHeader;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+}
+
+@keyframes slideHeader {
+  from {
+    transform: translateX(1020px);
+  }
+
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* 네비게이션 flex-container */
+.main-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.main-nav a {
+  flex-grow: 0;
+  color: #222;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 4px 6px;
+  border-bottom: 2px solid transparent;
+}
+
+.main-nav a:hover,
+.main-nav a.active {
+  color: #b00020;
+  border-bottom-color: #b00020;
+}
+
+/* 메인 컨텐츠 flex-container */
+.content-shell {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+}
+
+.movie-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid #222;
+  padding: 14px;
+}
+
+.movie-section h2,
+.about-section h2,
+.form-section h2 {
+  margin: 0 0 14px 0;
+  font-size: 22px;
+}
+
+.movie-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.movie-card {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  width: calc((100% - 48px) / 4);
+  min-width: 190px;
+  min-height: 360px;
+  border: 1px solid #444;
+  padding: 12px;
+}
+
+.poster-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+}
+
+.poster-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
+
+.poster-frame {
+  position: relative;
+  width: 78px;
+  height: 112px;
+  overflow: hidden;
+  border: 1px solid #ddd;
+  background-color: #f5f5f5;
+}
+
+.poster-frame img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition-property: transform;
+  transition-duration: 2s;
+  transition-timing-function: ease;
+}
+
+.poster-frame:hover img {
+  transform: scale(1.25);
+}
+
+.poster-frame::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 6px 4px;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.72);
+  font-size: 12px;
+  text-align: center;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: 0.3s;
+}
+
+.poster-frame:hover::after {
+  opacity: 1;
+}
+
+.movie-text {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 16px;
+}
+
+.movie-text h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.movie-text p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-top: 1px solid #222;
+  padding-top: 12px;
+}
+
+.about-body {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  width: 100%;
+}
+
+.about-body p {
+  flex-grow: 1;
+  width: 50%;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+/* 로그인, 회원가입 */
+.form-shell {
+  align-items: center;
+}
+
+.form-section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 620px;
+  border: 1px solid #222;
+  padding: 24px;
+}
+
+.user-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.form-row {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-row label {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.form-row input,
+.form-row select {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #777;
+  font-size: 15px;
+}
+
+.form-buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.form-buttons button {
+  padding: 10px 18px;
+  border: 1px solid #222;
+  background-color: #ffffff;
+  color: #222;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.form-buttons button:hover {
+  background-color: #222;
+  color: #ffffff;
+}
+
+/* 801px 이상 */
+@media screen and (min-width: 801px) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  .movie-list {
+    flex-direction: row;
+  }
+
+  .movie-card {
+    width: calc((100% - 48px) / 4);
+  }
+
+  .about-body {
+    flex-direction: row;
+  }
+}
+
+/* 481px ~ 800px */
+@media screen and (min-width: 481px) and (max-width: 800px) {
+  body {
+    padding: 18px;
+  }
+
+  .sliding-title {
+    font-size: 26px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+  }
+
+  .main-nav a {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  .movie-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .movie-card {
+    width: calc((100% - 16px) / 2);
+    min-width: 0;
+  }
+
+  .about-body {
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .about-body p {
+    width: 100%;
+  }
+}
+
+/* 480px 이하 */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 12px;
+  }
+
+  .site-header {
+    text-align: center;
+  }
+
+  .sliding-title {
+    font-size: 22px;
+  }
+
+  .main-nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .main-nav a {
+    flex-grow: 1;
+    width: 100%;
+    text-align: center;
+  }
+
+  .movie-section {
+    padding: 10px;
+  }
+
+  .movie-section h2,
+  .about-section h2,
+  .form-section h2 {
+    text-align: center;
+  }
+
+  .movie-list {
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+
+  .movie-card {
+    width: 100%;
+    min-width: 0;
+    min-height: 300px;
+  }
+
+  .poster-row {
+    justify-content: center;
+  }
+
+  .about-body {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .about-body p {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  .form-section {
+    padding: 18px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+
+  .form-buttons button {
+    width: 100%;
+  }
+}

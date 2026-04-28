@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Info Signup</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <div class="page-wrap">
+    <header class="site-header">
+      <div class="header-animation-box">
+        <h1 class="sliding-title">회원가입 페이지입니다.</h1>
+      </div>
+
+      <nav class="main-nav">
+        <a href="index.html">메인페이지</a>
+        <a href="login.html">로그인</a>
+        <a href="signup.html" class="active">회원가입</a>
+      </nav>
+    </header>
+
+    <main class="content-shell form-shell">
+      <section class="form-section">
+        <h2>Signup</h2>
+
+        <form action="#" method="post" class="user-form">
+          <div class="form-row">
+            <label for="signup-id">아이디</label>
+            <input type="text" id="signup-id" name="userid" placeholder="아이디 입력">
+          </div>
+
+          <div class="form-row">
+            <label for="signup-password">비밀번호</label>
+            <input type="password" id="signup-password" name="password" placeholder="비밀번호 입력">
+          </div>
+
+          <div class="form-row">
+            <label for="signup-password-check">비밀번호 확인</label>
+            <input type="password" id="signup-password-check" name="password-check" placeholder="비밀번호 재입력">
+          </div>
+
+          <div class="form-row">
+            <label for="signup-name">이름</label>
+            <input type="text" id="signup-name" name="username" placeholder="이름 입력">
+          </div>
+
+          <div class="form-row">
+            <label for="signup-email">이메일</label>
+            <input type="email" id="signup-email" name="email" placeholder="movie@example.com">
+          </div>
+
+          <div class="form-row">
+            <label for="favorite-genre">관심 장르</label>
+            <select id="favorite-genre" name="genre">
+              <option value="">장르 선택</option>
+              <option value="animation">Animation</option>
+              <option value="drama">Drama</option>
+              <option value="comedy">Comedy</option>
+              <option value="thriller">Thriller</option>
+              <option value="sf">SF</option>
+            </select>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit">회원가입</button>
+            <button type="reset">초기화</button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
