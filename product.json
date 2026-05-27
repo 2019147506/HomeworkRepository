@@ -1,0 +1,216 @@
+[
+  {
+    "title": "47 Meters Down",
+    "genre": "Drama, Thriller, Horror, Adventure",
+    "releaseDate": "2017-06-15",
+    "rating": 5.1,
+    "poster": "https://image.tmdb.org/t/p/w500/2IgdRUTdHyoI3nFORcnnYEKOGIH.jpg",
+    "overview": "Two sisters on Mexican vacation are trapped in a shark observation cage at the bottom of the ocean, with oxygen running low and great whites circling nearby, they have less than an hour of air left to figure out how to get to the surface."
+  },
+  {
+    "title": "Alien: Covenant",
+    "genre": "Horror, Science Fiction, Thriller",
+    "releaseDate": "2017-05-09",
+    "rating": 5.7,
+    "poster": "https://image.tmdb.org/t/p/w500/zecMELPbU5YMQpC81Z8ImaaXuf9.jpg",
+    "overview": "Bound for a remote planet on the far side of the galaxy, the crew of the colony ship 'Covenant' discovers what is thought to be an uncharted paradise, but is actually a dark, dangerous world – which has its sole inhabitant the 'synthetic', David, survivor of the doomed Prometheus expedition."
+  },
+  {
+    "title": "Baby Driver",
+    "genre": "Action, Crime",
+    "releaseDate": "2017-06-28",
+    "rating": 7.2,
+    "poster": "https://image.tmdb.org/t/p/w500/dN9LbVNNZFITwfaRjl4tmwGWkRg.jpg",
+    "overview": "After being coerced into working for a crime boss, a young getaway driver finds himself taking part in a heist doomed to fail."
+  },
+  {
+    "title": "Beauty and the Beast",
+    "genre": "Family, Fantasy, Romance",
+    "releaseDate": "2017-03-16",
+    "rating": 6.8,
+    "poster": "https://image.tmdb.org/t/p/w500/tWqifoYuwLETmmasnGHO7xBjEtt.jpg",
+    "overview": "A live-action adaptation of Disney's version of the classic 'Beauty and the Beast' tale of a cursed prince and a beautiful young woman who helps him break the spell."
+  },
+  {
+    "title": "Before I Fall",
+    "genre": "Mystery, Drama, Thriller",
+    "releaseDate": "2017-03-02",
+    "rating": 6.8,
+    "poster": "https://image.tmdb.org/t/p/w500/eowzonDJMCuNXoJGVkP9Z7oCmiM.jpg",
+    "overview": "Samantha Kingston has everything. Then, everything changes. After one fateful night, she wakes up with no future at all. Trapped into reliving the same day over and over, she begins to question just how perfect her life really was."
+  },
+  {
+    "title": "Captain Underpants: The First Epic Movie",
+    "genre": "Action, Animation, Comedy, Family",
+    "releaseDate": "2017-06-01",
+    "rating": 6.5,
+    "poster": "https://image.tmdb.org/t/p/w500/AjHZIkzhPXrRNE4VSLVWx6dirK9.jpg",
+    "overview": "Two mischievous kids hypnotize their mean elementary school principal and turn him into their comic book creation, the kind-hearted and elastic-banded Captain Underpants."
+  },
+  {
+    "title": "Ghost in the Shell",
+    "genre": "Action, Science Fiction, Thriller",
+    "releaseDate": "2017-03-29",
+    "rating": 5.9,
+    "poster": "https://image.tmdb.org/t/p/w500/myRzRzCxdfUWjkJWgpHHZ1oGkJd.jpg",
+    "overview": "In the near future, Major is the first of her kind: a human saved from a terrible crash, then cyber-enhanced to be a perfect soldier devoted to stopping the world's most dangerous criminals."
+  },
+  
+  {
+    "title": "Guardians of the Galaxy Vol. 2",
+    "genre": "Action, Adventure, Comedy, Science Fiction",
+    "releaseDate": "2017-04-19",
+    "rating": 7.6,
+    "poster": "https://image.tmdb.org/t/p/w500/y4MBh0EjBlMuOzv9axM4qJlmhzz.jpg",
+    "overview": "The Guardians must fight to keep their newfound family together as they unravel the mysteries of Peter Quill's true parentage."
+  },
+ 
+  {
+    "title": "King Arthur: Legend of the Sword",
+    "genre": "Action, Drama, Fantasy",
+    "releaseDate": "2017-04-27",
+    "rating": 6.5,
+    "poster": "https://image.tmdb.org/t/p/w500/qyXPqzlCWf3T9VEpBtquUQZwsgi.jpg",
+    "overview": "When the child Arthur’s father is murdered, Vortigern, Arthur’s uncle, seizes the crown. Robbed of his birthright and with no idea who he truly is, Arthur comes up the hard way in the back alleys of the city. But once he pulls the sword Excalibur from the stone, his life is turned upside down and he is forced to acknowledge his true legacy... whether he likes it or not."
+  },
+
+  {
+    "title": "Logan",
+    "genre": "Action, Drama, Science Fiction",
+    "releaseDate": "2017-02-28",
+    "rating": 7.6,
+    "poster": "https://image.tmdb.org/t/p/w500/gGBu0hKw9BGddG8RkRAMX7B6NDB.jpg",
+    "overview": "In the near future, a weary Logan cares for an ailing Professor X in a hideout on the Mexican border. But Logan's attempts to hide from the world and his legacy are upended when a young mutant arrives, pursued by dark forces."
+  },
+
+  {
+    "title": "Pirates of the Caribbean: Dead Men Tell No Tales",
+    "genre": "Adventure, Action, Fantasy, Comedy",
+    "releaseDate": "2017-05-23",
+    "rating": 6.6,
+    "poster": "https://image.tmdb.org/t/p/w500/xbpSDU3p7YUGlu9Mr6Egg2Vweto.jpg",
+    "overview": "Thrust into an all-new paycheck, a down-on-his-luck Capt. Jack Sparrow feels the winds of ill-fortune blowing even more strongly when deadly ghost sailors led by his old nemesis, the evil Capt. Salazar, escape from the Devil's Triangle. Jack's only hope of a payout lies in seeking out the legendary Trident of Numbers, but to find it, he must forge an uneasy alliance with a reasonably intelligent and pretty astronomer and a irritating young man in the British navy."
+  },
+
+  {
+    "title": "Security",
+    "genre": "Action",
+    "releaseDate": "2017-03-04",
+    "rating": 6.0,
+    "poster": "https://image.tmdb.org/t/p/w500/fG2SZwAAY4mNscLfvSiKyBxaVQy.jpg",
+    "overview": "An ex-special services veteran, down on his luck and desperate for work, takes a job as a security guard at a run-down mall in a rough area of town. On his first night on the job, he opens the door to a distraught and desperate young girl who has fled the hijacking of a Police motorcade that was transporting her to testify as a witness in a trial. Hot on her heels is the psychopathic hijacker and his team of henchmen, who will stop at nothing to extract and eliminate the witness."
+  },
+  {
+    "title": "Spirited Away",
+    "genre": "Fantasy, Adventure, Animation, Family",
+    "releaseDate": "2001-07-20",
+    "rating": 8.3,
+    "poster": "https://image.tmdb.org/t/p/w500/ynXoOxmDHNQ4UAy0oU6avW71HVW.jpg",
+    "overview": "A ten year old girl who wanders away from her parents along a path that leads to a world ruled by strange and unusual monster-like animals. Her parents have been changed into pigs along with others inside a bathhouse full of these creatures. Will she ever see the world how it once was?"
+  },
+  
+  {
+    "title": "The Bad Batch",
+    "genre": "Thriller, Romance, Science Fiction",
+    "releaseDate": "2017-06-23",
+    "rating": 5.3,
+    "poster": "https://image.tmdb.org/t/p/w500/7o14VaMphEIzPwzeW6FP3A6zb4W.jpg",
+    "overview": "In a desert wasteland in Texas, a muscled cannibal breaks one important rule: don’t play with your food."
+  },
+  {
+    "title": "The Circle",
+    "genre": "Drama, Thriller, Science Fiction",
+    "releaseDate": "2017-04-27",
+    "rating": 5.4,
+    "poster": "https://image.tmdb.org/t/p/w500/bQVqd5rWrx5GbXhJNuvKy4Viz6j.jpg",
+    "overview": "A young tech worker takes a job at a greedy Internet corporation, quickly rises up the company's ranks, and soon finds herself in a perilous situation concerning privacy, surveillance and freedom. She comes to learn that her decisions and actions will have no effect whatsoever."
+  },
+  {
+    "title": "The Dark Knight",
+    "genre": "Drama, Action, Crime, Thriller",
+    "releaseDate": "2008-07-16",
+    "rating": 8.3,
+    "poster": "https://image.tmdb.org/t/p/w500/1hRoyzDtpgMU7Dz4JF22RANzQO7.jpg",
+    "overview": "Batman raises the stakes in his war on crime. With the help of Lt. Jim Gordon and District Attorney Harvey Dent, Batman sets out to dismantle the remaining criminal organizations that plague the streets. The partnership proves to be effective, but they soon find themselves prey to a reign of chaos unleashed by a rising criminal mastermind known to the terrified citizens of Gotham as the Joker."
+  },
+  {
+    "title": "The Dark Tower",
+    "genre": "Action, Western, Science Fiction, Fantasy, Horror",
+    "releaseDate": "2017-08-03",
+    "rating": 5.7,
+    "poster": "https://image.tmdb.org/t/p/w500/i9GUSgddIqrroubiLsvvMRYyRy0.jpg",
+    "overview": "The last Gunslinger, Roland Deschain, has been locked in an eternal battle with Walter O’Dim, also known as the Man in Black, determined to prevent him from toppling the Dark Tower, which holds the universe together. With the fate of the worlds at stake, good and evil will collide in the ultimate battle as only Roland can defend the Tower from the Man in Black."
+  },
+  {
+    "title": "The Fate of the Furious",
+    "genre": "Action, Crime, Thriller",
+    "releaseDate": "2017-04-12",
+    "rating": 6.8,
+    "poster": "https://image.tmdb.org/t/p/w500/g52r6ZXqRPfRagwsOaorOGWxOk3.jpg",
+    "overview": "When a mysterious woman seduces Dom into the world of crime and a betrayal of those closest to him, the crew face trials that will test them as never before."
+  },
+  {
+    "title": "The Godfather",
+    "genre": "Drama, Crime",
+    "releaseDate": "1972-03-14",
+    "rating": 8.5,
+    "poster": "https://image.tmdb.org/t/p/w500/rPdtLWNsZmAtoZl9PK7S2wE3qiS.jpg",
+    "overview": "Spanning the years 1945 to 1955, a chronicle of the fictional Italian-American Corleone crime family. When organized crime family patriarch, Vito Corleone barely survives an attempt on his life, his youngest son, Michael steps in to take care of the would-be killers, launching a campaign of bloody revenge."
+  },
+  {
+    "title": "Thor: Ragnarok",
+    "genre": "Action, Adventure, Fantasy, Science Fiction",
+    "releaseDate": "2017-10-25",
+    "rating": 0.0,
+    "poster": "https://image.tmdb.org/t/p/w500/avy7IR8UMlIIyE2BPCI4plW4Csc.jpg",
+    "overview": "Thor is imprisoned on the other side of the universe and finds himself in a race against time to get back to Asgard to stop Ragnarok, the destruction of his homeworld and the end of Asgardian civilization, at the hands of an all-powerful new threat, the ruthless Hela."
+  },
+  {
+    "title": "Transformers: The Last Knight",
+    "genre": "Action, Science Fiction, Thriller, Adventure",
+    "releaseDate": "2017-06-21",
+    "rating": 6.2,
+    "poster": "https://image.tmdb.org/t/p/w500/s5HQf2Gb3lIO2cRcFwNL9sn1o1o.jpg",
+    "overview": "Autobots and Decepticons are at war, with humans on the sidelines. Optimus Prime is gone. The key to saving our future lies buried in the secrets of the past, in the hidden history of Transformers on Earth."
+  },
+  {
+    "title": "War for the Planet of the Apes",
+    "genre": "Drama, Science Fiction, War",
+    "releaseDate": "2017-07-11",
+    "rating": 6.7,
+    "poster": "https://image.tmdb.org/t/p/w500/3vYhLLxrTtZLysXtIWktmd57Snv.jpg",
+    "overview": "Caesar and his apes are forced into a deadly conflict with an army of humans led by a ruthless Colonel. After the apes suffer unimaginable losses, Caesar wrestles with his darker instincts and begins his own mythic quest to avenge his kind. As the journey finally brings them face to face, Caesar and the Colonel are pitted against each other in an epic battle that will determine the fate of both their species and the future of the planet."
+  },
+  {
+    "title": "What Happened to Monday",
+    "genre": "Science Fiction, Thriller",
+    "releaseDate": "2017-08-18",
+    "rating": 7.3,
+    "poster": "https://image.tmdb.org/t/p/w500/o6EsOqITcSzcdwD1zxBM9imdxjr.jpg",
+    "overview": "In a world where families are limited to one child due to overpopulation, a set of identical septuplets must avoid being put to a long sleep by the government and dangerous infighting while investigating the disappearance of one of their own."
+  },
+  {
+    "title": "Wind River",
+    "genre": "Action, Crime, Mystery, Thriller",
+    "releaseDate": "2017-08-03",
+    "rating": 7.4,
+    "poster": "https://image.tmdb.org/t/p/w500/fzsaNUcRH0cV2gg5rjQH83ZEI8M.jpg",
+    "overview": "An FBI agent teams with the town's veteran game tracker to investigate a murder that occurred on a Native American reservation."
+  },
+  {
+    "title": "Wish Upon",
+    "genre": "Fantasy, Horror, Thriller",
+    "releaseDate": "2017-07-07",
+    "rating": 5.3,
+    "poster": "https://image.tmdb.org/t/p/w500/u0vnocj57vJt5DHoBEqUOD1G4SU.jpg",
+    "overview": "A teenage girl discovers a box with magical powers, but those powers comes with a deadly price."
+  },
+  {
+    "title": "Wonder Woman",
+    "genre": "Action, Adventure, Fantasy",
+    "releaseDate": "2017-05-30",
+    "rating": 7.2,
+    "poster": "https://image.tmdb.org/t/p/w500/imekS7f1OuHyUP2LAiTEM0zBzUz.jpg",
+    "overview": "An Amazon princess comes to the world of Man to become the greatest of the female superheroes."
+  }
+]

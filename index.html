@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Finder</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <main class="page">
+    <header class="site-header">
+      <h1 class="site-title">Movie Finder</h1>
+      <nav class="nav-links">
+        <a href="login.html">Login</a>
+        <a href="signup.html">Sign Up</a>
+      </nav>
+    </header>
+
+    <section class="controls">
+      <input id="searchInput" type="text" placeholder="Search by title, genre, director...">
+      <select id="sortSelect">
+        <option value="title-asc">Title A-Z</option>
+        <option value="rating-desc">Rating High-Low</option>
+        <option value="date-desc">Newest First</option>
+        <option value="date-asc">Oldest First</option>
+      </select>
+    </section>
+
+    <section id="movieGrid" class="movie-grid" aria-live="polite"></section>
+    <p id="status" class="status">Loading movies...</p>
+  </main>
+
+  <script>
+    const movieGrid = document.getElementById("movieGrid");
+    const searchInput = document.getElementById("searchInput");
+    const sortSelect = document.getElementById("sortSelect");
+    const statusText = document.getElementById("status");
+
+    let allMovies = [];
+    let filteredMovies = [];
+    let visibleCount = 0;
+    const loadSize = 8;
+
+    async function loadMovies() {
+      try {
+        const response = await fetch("product.json");
+        if (!response.ok) {
+          throw new Error("Failed to fetch product.json");
+        }
+
+        allMovies = await response.json();
+        applyFiltersAndSort();
+      } catch (error) {
+        statusText.textContent = "Movie data could not be loaded.";
+        console.error(error);
+      }
+    }
+
+    function applyFiltersAndSort() {
+      const keyword = searchInput.value.trim().toLowerCase();
+
+      filteredMovies = allMovies.filter(movie => {
+        return (
+          movie.title.toLowerCase().includes(keyword) ||
+          movie.genre.toLowerCase().includes(keyword) ||
+          movie.director.toLowerCase().includes(keyword)
+        );
+      });
+
+      sortMovies(filteredMovies, sortSelect.value);
+      visibleCount = 0;
+      movieGrid.innerHTML = "";
+      renderMoreMovies();
+    }
+
+    function sortMovies(movies, option) {
+      if (option === "title-asc") {
+        movies.sort((a, b) => a.title.localeCompare(b.title));
+      } else if (option === "rating-desc") {
+        movies.sort((a, b) => b.rating - a.rating);
+      } else if (option === "date-desc") {
+        movies.sort((a, b) => new Date(b.releaseDate) - new Date(a.releaseDate));
+      } else if (option === "date-asc") {
+        movies.sort((a, b) => new Date(a.releaseDate) - new Date(b.releaseDate));
+      }
+    }
+
+    function renderMoreMovies() {
+      const nextMovies = filteredMovies.slice(visibleCount, visibleCount + loadSize);
+
+      nextMovies.forEach(movie => {
+        const card = document.createElement("article");
+        card.className = "movie-card";
+
+        card.innerHTML = `
+          <div class="poster-wrap">
+            <img src="${movie.poster}" alt="${movie.title} poster">
+            <div class="overview">${movie.overview}</div>
+          </div>
+          <div class="movie-info">
+            <h2>${movie.title}</h2>
+            <p><strong>Rating:</strong> ${movie.rating}</p>
+            <p><strong>Release:</strong> ${movie.releaseDate}</p>
+            <p><strong>Genre:</strong> ${movie.genre}</p>
+          </div>
+        `;
+
+        movieGrid.appendChild(card);
+      });
+
+      visibleCount += nextMovies.length;
+      updateStatus();
+    }
+
+    function updateStatus() {
+      if (filteredMovies.length === 0) {
+        statusText.textContent = "No movies found.";
+      } else if (visibleCount >= filteredMovies.length) {
+        statusText.textContent = "All movies loaded.";
+      } else {
+        statusText.textContent = "Scroll down to load more movies.";
+      }
+    }
+
+    window.addEventListener("scroll", () => {
+      const nearBottom = window.innerHeight + window.scrollY >= document.body.offsetHeight - 120;
+      if (nearBottom && visibleCount < filteredMovies.length) {
+        renderMoreMovies();
+      }
+    });
+
+    searchInput.addEventListener("input", applyFiltersAndSort);
+    sortSelect.addEventListener("change", applyFiltersAndSort);
+
+    loadMovies();
+  </script>
+</body>
+</html>
