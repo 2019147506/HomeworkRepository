@@ -17,7 +17,7 @@
     </header>
 
     <section class="controls">
-      <input id="searchInput" type="text" placeholder="Search by title, genre, director...">
+      <input id="searchInput" type="text" placeholder="Search by title, genre, overview...">
       <select id="sortSelect">
         <option value="title-asc">Title A-Z</option>
         <option value="rating-desc">Rating High-Low</option>
@@ -63,7 +63,7 @@
         return (
           movie.title.toLowerCase().includes(keyword) ||
           movie.genre.toLowerCase().includes(keyword) ||
-          movie.director.toLowerCase().includes(keyword)
+          movie.overview.toLowerCase().includes(keyword)
         );
       });
 
